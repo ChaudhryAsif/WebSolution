@@ -4,7 +4,8 @@ namespace WebSolution.Controllers
 {
     public class StudentController : Controller
     {
-        public IActionResult StudentBio()
+        [HttpGet]
+        public IActionResult Index()
         {
             return View();
         }
