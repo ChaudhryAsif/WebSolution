@@ -12,8 +12,8 @@ using WebSolution.Data;
 namespace WebSolution.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230131053444_initial")]
-    partial class initial
+    [Migration("20230131061122_change-tableName")]
+    partial class changetableName
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -85,7 +85,7 @@ namespace WebSolution.Migrations
 
                     b.HasIndex("StudentId");
 
-                    b.ToTable("StudentCourse");
+                    b.ToTable("Enrollments");
                 });
 
             modelBuilder.Entity("WebSolution.Models.StudentCourse", b =>
