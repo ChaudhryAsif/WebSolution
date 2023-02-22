@@ -10,7 +10,7 @@ using WebSolution.Data;
 
 namespace WebSolution.Migrations
 {
-    [DbContext(typeof(DataContext))]
+    [DbContext(typeof(WebSolutionContext))]
     partial class DataContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

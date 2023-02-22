@@ -6,9 +6,9 @@ namespace WebSolution.Controllers
 {
     public class CoursesController : Controller
     {
-        private readonly DataContext _context;
+        private readonly WebSolutionContext _context;
 
-        public CoursesController(DataContext context)
+        public CoursesController(WebSolutionContext context)
         {
             _context = context;
         }

@@ -40,11 +40,27 @@
                @* @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
-                <a asp-action="Edit" asp-route-Id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-Id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-Id="@item.Id">Delete</a> |
-            </td>
-        </tr>
-}
+                    <a asp-action="Edit" asp-route-Id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-Id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-Id="@item.Id">Delete</a> |
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+<script>
+    function getArray() {
+        var counts = {};
+        var arr = ['a', 'd', 'r', 'a', 'a', 'f', 'd'];
+        arr.forEach(function (element) {
+            counts[element] = (counts[element] || 0) + 1;
+        });
+        debugger;
+        for (var element in counts) {
+            console.log(element + ' = ' + counts[element]);
+        }
+
+        console.log("click me");
+    }
+</script>

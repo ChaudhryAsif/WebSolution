@@ -11,7 +11,7 @@ using WebSolution.Data;
 
 namespace WebSolution.Migrations
 {
-    [DbContext(typeof(DataContext))]
+    [DbContext(typeof(WebSolutionContext))]
     [Migration("20230131061122_change-tableName")]
     partial class changetableName
     {
